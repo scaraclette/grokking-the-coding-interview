@@ -21,6 +21,7 @@ def non_repeat_substring(s):
             
     return sub_max
 
+# Jump to next index without 2n solution
 def alternative_non_repeat_substring(s):
     if s == 0 or s == None:
         return 0
