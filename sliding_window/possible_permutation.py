@@ -22,7 +22,9 @@ def find_permutation(str1, pattern):
             if pattern_counter[char_end] == 0:
                 matched += 1
 
-        if matched == len(pattern):
+        print(matched, len(pattern))
+        if matched == len(pattern_counter):
+            # print(matched, pattern_counter)
             return True
 
         if window_end >= len(pattern) - 1:
@@ -41,7 +43,9 @@ def main():
 #   print('Permutation exist: ' + str(find_permutation("oidbcaf", "abc")))
 #   print('Permutation exist: ' + str(find_permutation("odicf", "dc")))
 #   print('Permutation exist: ' + str(find_permutation("bcdxabcdy", "bcdyabcdx")))
-  print('Permutation exist: ' + str(find_permutation("aaacb", "abc")))
+    print('Permutation exist: ' + str(find_permutation("aaacb", "abc")))
+    print('Permutation exist: ' + str(find_permutation("abcdxabcde", "abcdeabcdx")))
+
 
 
 main()
